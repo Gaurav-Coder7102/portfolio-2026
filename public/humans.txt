@@ -1,0 +1,31 @@
+# GauravKadam.tech
+
+## Full Stack Developer Portfolio
+
+**Name:** Gaurav Kadam  
+**Website:** https://gaurav-kadam-h9abtqk.gamma.site/  
+**Email:** kadamgauravsanjay@gmail.com  
+**LinkedIn:** https://www.linkedin.com/in/gaurav-kadam-023495247/  
+**GitHub:** https://github.com/gaurav-coder7102 
+
+### About
+Full Stack Developer skilled in Python, PHP, Java, JavaScript, React, NestJS, Django, Laravel. Expert in cybersecurity, DevOps, and microservices architecture.
+
+### Technologies
+- **Frontend:** React, JavaScript, TypeScript, HTML5, CSS3, Tailwind CSS
+- **Backend:** NestJS, Django, Laravel, Node.js
+- **Languages:** Python, PHP, Java, JavaScript, TypeScript
+- **Databases:** MongoDB, PostgreSQL, MySQL
+- **DevOps:** Docker, AWS, CI/CD
+- **Security:** Cybersecurity, Web Security, System Security
+
+### Services
+- Full Stack Web Development
+- API Development
+- System Architecture Design
+- Cybersecurity Consulting
+- DevOps Implementation
+- Technical Consulting
+
+---
+© 2025 Gaurav Kadam. All rights reserved.
