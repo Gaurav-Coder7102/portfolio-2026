@@ -1,5 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from "react-router-dom";
+
+
 
 // Mock Hero component with photo
 const Hero = () => (
@@ -66,9 +69,10 @@ const Hero = () => (
         </p>
 
         <motion.button
+          onClick={() => window.location.href = "/contact"}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full text-white font-semibold shadow-lg shadow-emerald-500/30 dark:shadow-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/50 dark:hover:shadow-emerald-500/60 transition-all duration-300"
+          className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full text-white font-semibold shadow-lg"
         >
           Let's Connect
         </motion.button>
@@ -132,6 +136,7 @@ const cards = [
     icon: <FaProjectDiagram />,
     gradient: "from-emerald-500 to-teal-500",
     cta: "View Projects",
+    path: "/projects"
   },
   {
     title: "My Blog",
@@ -139,10 +144,13 @@ const cards = [
     icon: <FaBlog />,
     gradient: "from-teal-500 to-cyan-500",
     cta: "Read Blog",
+    path: "/blog"
   },
 ];
 
 const Homepage = () => {
+  
+const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900">
       <Hero />
@@ -232,6 +240,7 @@ const Homepage = () => {
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
+                      onClick={() => navigate(card.path)}
                       className={`relative px-8 py-3 rounded-full font-semibold text-white bg-gradient-to-r ${card.gradient} shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group/button`}
                     >
                       <span className="relative z-10">{card.cta}</span>
@@ -266,6 +275,7 @@ const Homepage = () => {
             Let's collaborate and bring your ideas to life
           </p>
           <motion.button
+            onClick={() => window.location.href = "/contact"}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-10 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full text-white font-semibold text-lg shadow-xl shadow-emerald-500/30 dark:shadow-emerald-500/50 hover:shadow-2xl hover:shadow-emerald-500/50 dark:hover:shadow-emerald-500/60 transition-all duration-300"
