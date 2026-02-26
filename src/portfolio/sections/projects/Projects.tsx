@@ -8,7 +8,7 @@ const Projects = () => {
   // console.log(projects)
   const projects = [
   {
-    image: "public/assets/Biometric.png",
+    image: "/assets/home/Biometric.png",
     title: "AI-Based Biometric Authentication System",
     github: "",
     live: "",
@@ -22,7 +22,7 @@ const Projects = () => {
     ]
   },
   {
-    image: "public/assets/corebanking.png",
+    image: "/assets/home/corebanking.png",
     title: "Enterprise Core Banking Application",
     github: "",
     live: "",
@@ -38,7 +38,7 @@ const Projects = () => {
     ]
   },
   {
-    image: "public/assets/plsql.png",
+    image: "/assets/home/plsql.png",
     title: "PL/SQL Banking Integration Module",
     github: "",
     live: "",
