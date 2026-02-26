@@ -6,17 +6,54 @@ import { UseProjects } from "../../hooks/project.hook";
 const Projects = () => {
   // const { data: projects, isLoading } = UseProjects();
   // console.log(projects)
-  const projects=[{
-    image:"",
-    title:"Biometric Authentication",
-    github:"",
-    live:"",
-    description:"",
-    tech:["Spring Boot","Java"]
+  const projects = [
+  {
+    image: "public/assets/Biometric.png",
+    title: "AI-Based Biometric Authentication System",
+    github: "",
+    live: "",
+    description:
+      "Designed and implemented a secure biometric authentication system for Core Banking applications. Integrated FaceAPI.js and machine learning models for facial recognition and identity verification. Built backend APIs using Spring Boot to handle authentication workflows and secure user validation.",
+    tech: [
+      "Java",
+      "Spring Boot",
+      "RESTful APIs",
+      "FaceAPI.js",
+    ]
+  },
+  {
+    image: "public/assets/corebanking.png",
+    title: "Enterprise Core Banking Application",
+    github: "",
+    live: "",
+    description:
+      "Developed and maintained enterprise-grade banking modules using Spring Boot and REST APIs. Designed secure backend architecture and optimized PL/SQL procedures for seamless banking integrations and high-performance transaction handling.",
+    tech: [
+      "Java",
+      "Spring Boot",
+      "PL/SQL",
+      "Oracle Database",
+      "Hibernate",
+      "Secure Architecture"
+    ]
+  },
+  {
+    image: "public/assets/plsql.png",
+    title: "PL/SQL Banking Integration Module",
+    github: "",
+    live: "",
+    description:
+      "Designed complex PL/SQL procedures and database triggers to support banking operations and third-party integrations. Improved performance and reduced transaction latency through query optimization and indexing strategies.",
+    tech: [
+      "PL/SQL",
+      "Oracle DB",
+      "Stored Procedures",
+      "Database Optimization",
+      "System Integration"
+    ]
+  }
+];
 
-    
-
-  }];
 
   return (
     <section

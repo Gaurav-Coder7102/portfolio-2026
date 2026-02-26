@@ -16,34 +16,85 @@ const cardVariants = {
 };
 const Skills = () => {
     //const { data: skills, isLoading, isError } = UseSkills();
-    const skills = [
-        {
-            category: "Frontend",
-            items: [
-                {
-                    name: "React",
-                    icon: "https://tse1.mm.bing.net/th/id/OIP.K-4RqDC6zFrpAG31ayDDOgHaHa?pid=Api&P=0&h=180",
-                },
-                {
-                    name: "Angular",
-                    icon: "https://tse1.mm.bing.net/th/id/OIP.PtkUJ4KMeyguSSbaJCO41gHaH0?pid=Api&P=0&h=180",
-                }
-            ],
-        },
-        {
-            category: "Backend",
-            items: [
-                {
-                    name: "Spring Boot",
-                    icon: "https://tse3.mm.bing.net/th/id/OIP.HAhjMQI97iE5TsvYVu4lmwHaHa?pid=Api&P=0&h=180",
-                },
-                {
-                    name: "Node.js/Express.js",
-                    icon: "https://tse3.mm.bing.net/th/id/OIP.l5tqLamYOkAsETlqh1-bxAHaHa?pid=Api&P=0&h=180",
-                }
-            ],
-        }
-    ]
+   const skills = [
+  {
+    category: "Backend Development",
+    items: [
+      {
+        name: "Java (Core & Advanced)",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      },
+      {
+        name: "Spring Boot",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+      },
+      {
+        name: "RESTful APIs",
+        icon: "https://cdn-icons-png.flaticon.com/512/2166/2166823.png",
+      },
+      {
+        name: "Hibernate",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-plain.svg",
+      }
+    ],
+  },
+  {
+    category: "Database & Integration",
+    items: [
+      {
+        name: "PL/SQL",
+        icon: "https://cdn-icons-png.flaticon.com/512/2772/2772128.png",
+      },
+      {
+        name: "Oracle Database",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg",
+      },
+      {
+        name: "Stored Procedures",
+        icon: "https://cdn-icons-png.flaticon.com/512/906/906175.png",
+      },
+      {
+        name: "Database Optimization",
+        icon: "https://cdn-icons-png.flaticon.com/512/2881/2881142.png",
+      }
+    ],
+  },
+  {
+    category: "AI & Biometric Systems",
+    items: [
+      {
+        name: "FaceAPI.js",
+        icon: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+      },
+      {
+        name: "Machine Learning Integration",
+        icon: "https://cdn-icons-png.flaticon.com/512/4149/4149659.png",
+      },
+      {
+        name: "Facial Recognition",
+        icon: "https://cdn-icons-png.flaticon.com/512/921/921347.png",
+      }
+    ],
+  },
+  {
+    category: "Web Technologies",
+    items: [
+      {
+        name: "HTML5",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      },
+      {
+        name: "CSS3",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+      {
+        name: "JavaScript (ES6+)",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      }
+    ],
+  }
+];
+
 
 
     return (
