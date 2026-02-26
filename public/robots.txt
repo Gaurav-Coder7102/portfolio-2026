@@ -98,7 +98,7 @@ User-agent: Slurp
 Allow: /
 
 # Sitemap location
-Sitemap: https://rohitpatil.tech/sitemap.xml
+Sitemap: https://gauravkadam.vercel.app/sitemap.xml
 
 # Crawl delay (optional - helps with server load)
 Crawl-delay: 1

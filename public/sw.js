@@ -2,7 +2,7 @@
 const CACHE_NAME = 'portfolio-v1';
 const STATIC_ASSETS = [
   '/',
-  '/assets/rohit.jpg',
+  '/assets/Gaurav.jpg',
   '/assets/favicon.png',
   '/manifest.json'
 ];
