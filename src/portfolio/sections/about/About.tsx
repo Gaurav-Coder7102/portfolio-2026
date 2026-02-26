@@ -9,7 +9,7 @@ const About = () => {
  
   const aboutContent = {
     title: "Gaurav Kadam ",
-    photo:  "public/assets/GauravKadam.jpg",
+    photo:  "/assets/home/GauravKadam.jpg",
     paragraphs: ["I’m Gaurav Kadam, a Software Engineer specializing in Core Banking Solutions, with hands-on experience building secure, enterprise-grade applications. I have worked extensively on Spring Boot–based systems, RESTful APIs, and complex PL/SQL integrations, delivering reliable and scalable solutions for real-world banking use cases.My work includes biometric authentication systems, where I’ve integrated facial recognition and identity verification using FaceAPI.js and machine learning models, ensuring high security and performance. I enjoy designing clean backend architectures, optimizing processes, and solving challenging problems in high-impact domains like fintech.Driven by curiosity and continuous learning, I actively explore AI-driven solutions, system design, and scalable architectures. My goal is to build robust products that combine security, performance, and great user experience—while growing into a tech entrepreneur who creates meaningful, real-world software products."],
     experienceCount:"1.5",
     projectsCount:"5",
