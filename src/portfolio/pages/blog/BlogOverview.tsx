@@ -9,13 +9,23 @@ import SmartTextRendere from "../../components/SmartTextRender";
 import { HOME_LINK, CONTACT_LINK, BLOG_LINK } from "../../config/config";
 import { FaArrowLeft, FaCalendar, FaClock, FaTags } from "react-icons/fa";
 import { blogs } from "../../data/blog/blogData";
+import { useEffect, useState } from "react";
+import type { BlogDetailView } from "../../services";
 
 const BlogOverview = () => {
   const { slug } = useParams();
-  console.log(slug)
-  // const { data: blogPost, isLoading } = UseBlogDetail(slug);
-  const blogPost = blogs.find((blog) => blog.slug === slug);
-const isLoading = false;
+
+  const [blogPost, setBlogPost] = useState<BlogDetailView | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+ 
+  useEffect(() => {
+        setIsLoading(true);
+        const post = blogs.find((blog) => blog.slug === slug);
+        setBlogPost(post ?? null);
+        setIsLoading(false);
+  }, [slug])
+//   
+// const isLoading = false;
 
   if (isLoading) {
     return <Loader />;
