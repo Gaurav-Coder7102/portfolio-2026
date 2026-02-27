@@ -4,34 +4,21 @@ import { FaPenNib, FaCalendarAlt, FaClock } from "react-icons/fa";
 import { BLOG_LINK } from "../../config/config";
 import { UseBlogList } from "../../hooks/blog.hook";
 import { formatDate } from "../../../common/utils";
+import { useEffect } from "react";
+import { blogs } from "../../data/blog/blogData";
+import type { BlogPost } from "../../services";
 
 const Blog = () => {
-  
+
   //const {data: blogPosts, isLoading} = UseBlogList();
-  const blogPosts = [
-  {
-    title: "System Design Basics: How to Design Scalable & Reliable Systems",
-    description:
-      "Learn the core principles of system design including scalability, reliability, availability, and performance. This beginner-friendly guide explains how real-world systems like Netflix, WhatsApp, and payment platforms are designed.",
-    tags: [
-      "systemdesign",
-      "scalability",
-      "backend",
-      "architecture",
-      "distributed-systems",
-    ],
-    date: "2025-02-01",
-    readTime: "7 min",
-    slug: "system-design-basics-scalable-reliable-systems",
-  },
-];
+  let blogPosts: BlogPost[] = blogs;
 
   return (
     <section
       id="blog"
       className="px-6 sm:px-12 py-24 bg-gradient-to-br from-white via-cyan-50 to-blue-50 dark:from-black dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-white transition-colors duration-300"
     >
-      {false && <Loader/>}
+      {false && <Loader />}
       <div className="max-w-6xl mx-auto text-center space-y-14">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

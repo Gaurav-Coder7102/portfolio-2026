@@ -64,8 +64,6 @@ User-agent: DotBot
 Disallow: /
 
 # END Content Signals and AI Bot Management
-
-# Robots.txt for rohitpatil.tech
 # Allow legitimate search engines to access portfolio content
 
 User-agent: *

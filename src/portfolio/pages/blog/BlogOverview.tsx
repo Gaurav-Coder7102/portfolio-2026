@@ -8,11 +8,14 @@ import { UseBlogDetail } from "../../hooks/blog.hook";
 import SmartTextRendere from "../../components/SmartTextRender";
 import { HOME_LINK, CONTACT_LINK, BLOG_LINK } from "../../config/config";
 import { FaArrowLeft, FaCalendar, FaClock, FaTags } from "react-icons/fa";
+import { blogs } from "../../data/blog/blogData";
 
 const BlogOverview = () => {
   const { slug } = useParams();
-  const { data: blogPost, isLoading } = UseBlogDetail(slug);
-  // const relatedBlogs: any = [];
+  console.log(slug)
+  // const { data: blogPost, isLoading } = UseBlogDetail(slug);
+  const blogPost = blogs.find((blog) => blog.slug === slug);
+const isLoading = false;
 
   if (isLoading) {
     return <Loader />;
@@ -95,38 +98,6 @@ const BlogOverview = () => {
             />
           </div>
         </motion.div>
-
-        {/* Related Blogs */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mb-12"
-        >
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">Related Articles</h3>
-          <div className="grid gap-6 md:grid-cols-2">
-            {relatedBlogs?.map((relatedBlog: any) => (
-              <Link
-                key={relatedBlog.id}
-                to={`/blog/${relatedBlog.id}`}
-                className="group bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:-translate-y-1"
-              >
-                <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                  {relatedBlog.title}
-                </h4>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2">
-                  {relatedBlog.excerpt}
-                </p>
-                <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
-                  <span>📅 {formatDate(relatedBlog.date)}</span>
-                  <span>⏱️ {relatedBlog.readTime}</span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </motion.div> */}
-
-        {/* Navigation Links */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
